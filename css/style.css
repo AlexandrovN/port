@@ -1,0 +1,1620 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.header {}
+
+.block {}
+
+.block__container {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.block__header {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.block__header:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.header-block {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    align-self: center;
+    background-color: rgb(149, 124, 78);
+    border-radius: 15px;
+    padding: 10px;
+    border: 2px solid rgb(0, 0, 0, 0.6);
+}
+
+.header-block::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url();
+}
+
+.header-block__titlle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.header-block__titlle::before {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: -8px;
+    width: 107%;
+    border: 1px solid #000;
+}
+
+.header-block__titlle:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.header-block__text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+
+.block__items {
+    display: flex;
+    margin: 0px -15px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.block__items:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+
+.purple {
+    padding: 17px 15px 16px 15px;
+    text-align: center;
+    flex: 0 1 35%;
+    align-self: center;
+    background-color: rgb(164, 135, 164);
+    border-radius: 25px;
+    display: inline-block;
+    border: 2px solid rgb(0, 0, 0, 0.6);
+}
+
+.purple__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.purple__title::before {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: -15px;
+    width: 107%;
+    border: 1px solid #000;
+}
+
+.purple__title:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.purple__text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+
+.orange {
+    padding: 5px 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    flex: 0 1 35%;
+    align-self: center;
+    background-color: rgba(210, 143, 19, 0.897);
+    border-radius: 25px;
+    display: inline-block;
+    border: 2px solid rgb(0, 0, 0, 0.6);
+}
+
+.orange__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.orange__title::before {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: -15px;
+    width: 107%;
+    border: 1px solid #000;
+}
+
+.orange__text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+
+
+.block__row {}
+
+.block__row:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.row-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(51, 51, 51, 0.8);
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.row-block__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-block__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    align-self: center;
+}
+
+.row-block__title:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.row-block__column {
+    display: flex;
+}
+
+.row-block__lists {
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.row-block__lists::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: -19px;
+    width: 103%;
+    border: 1px solid rgb(238, 238, 238);
+}
+
+.row-block__list {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+
+.row-block__items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    border: 2px solid #FFFFFF;
+}
+
+.row-block__item {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 200px;
+}
+
+.row-block__item:not(:last-child):after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    width: 100%;
+    border: 1px solid #FFFFFF;
+}
+
+.row-block__subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    position: relative;
+    min-width: 285px;
+}
+
+/* .row-block__subtitle::before {
+    content: "1";
+    position: absolute;
+    top: 1px;
+    left: -310px;
+} */
+
+.row-block__text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    position: relative;
+    min-width: 194px;
+}
+
+/* .row-block__text::after {
+    content: "komandaodi@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+} */
+
+.row-block__subtitle_1 {
+    position: relative;
+}
+
+.row-block__subtitle_1::before {
+    content: "1";
+    position: absolute;
+    top: 1px;
+    left: -310px;
+}
+
+
+.row-block__text_1 {
+    position: relative;
+}
+
+.row-block__text_1::after {
+    content: "komandaodi@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__subtitle_2 {
+    position: relative;
+}
+
+.row-block__subtitle_2::before {
+    content: "2";
+    position: absolute;
+    top: 1px;
+    left: -310px;
+}
+
+.row-block__text_2 {
+    position: relative;
+}
+
+.row-block__text_2::after {
+    content: "goodfinish@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+.row-block__subtitle_3 {
+    position: relative;
+}
+
+.row-block__subtitle_3::before {
+    content: "3";
+    position: absolute;
+    top: 1px;
+    left: -310px;
+}
+
+.row-block__text_3 {
+    position: relative;
+}
+
+.row-block__text_3::after {
+    content: "alextkd@3g.ua";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__subtitle_4 {
+    position: relative;
+}
+
+.row-block__subtitle_4::before {
+    content: "4";
+    position: absolute;
+    top: 1px;
+    left: -310px;
+}
+
+.row-block__text_4 {
+    position: relative;
+}
+
+.row-block__text_4::after {
+    content: "natalya7373@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__subtitle_5 {
+    position: relative;
+}
+
+.row-block__subtitle_5::after {
+    content: "5";
+    position: absolute;
+    top: 1px;
+    left: -310px;
+}
+}
+
+.row-block__text_5 {
+    position: relative;
+}
+
+.row-block__text_5::after {
+    content: "natalya7373@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__subtitle_6 {
+    position: relative;
+}
+
+.row-block__subtitle_6::after {
+    content: "6";
+    position: absolute;
+    top: 1px;
+    left: -310px;
+}
+}
+
+.row-block__text_6 {
+    position: relative;
+}
+
+.row-block__text_6::after {
+    content: "a_maloy@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__subtitle_7 {
+    position: relative;
+}
+
+.row-block__subtitle_7::after {
+    content: "7";
+    position: absolute;
+    top: 1px;
+    left: -310px;
+}
+}
+
+.row-block__text_7 {
+    position: relative;
+}
+
+.row-block__text_7::after {
+    content: "Ilona.perelygina@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+.row-block__subtitle_8 {
+    position: relative;
+}
+
+.row-block__subtitle_8::after {
+    content: "8";
+    position: absolute;
+    top: 1px;
+    left: -310px;
+}
+
+
+.row-block__text_8 {
+    position: relative;
+}
+
+.row-block__text_8::after {
+    content: "";
+    border: 1px solid #FFFFFF;
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    right: -310px;
+}
+
+.row-block__subtitle_9 {
+    position: relative;
+}
+
+.row-block__subtitle_9::after {
+    content: "9";
+    position: absolute;
+    top: 1px;
+    left: -310px;
+}
+
+.row-block__text_9 {
+    position: relative;
+}
+
+.row-block__text_9::after {
+    content: "svetamustyasa@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.block__lol {}
+
+.block__lol:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.row-block__txt_1 {
+    position: relative;
+}
+
+.row-block__txt_1::after {
+    content: "mah46@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__txt_2 {
+    position: relative;
+}
+
+.row-block__txt_2::after {
+    content: "alpha5@i.uat";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__txt_3 {
+    position: relative;
+}
+
+.row-block__txt_3::after {
+    content: "stavrinov40@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__txt_4 {
+    position: relative;
+}
+
+.row-block__txt_4::after {
+    content: "lekajudo@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__txt_5 {
+    position: relative;
+}
+
+.row-block__txt_5::after {
+    content: "solodkaov@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.block__foot {}
+
+.block__foot:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+
+.row-block__foot_1 {
+    position: relative;
+}
+
+.row-block__foot_1::after {
+    content: "vovavvs1941@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+.row-block__foot_2 {
+    position: relative;
+}
+
+.row-block__foot_2::after {
+    content: "astakhov1941@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+.row-block__foot_3 {
+    position: relative;
+}
+
+.row-block__foot_3::after {
+    content: "molga.0604@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+.row-block__foot_4 {
+    position: relative;
+}
+
+.row-block__foot_4::after {
+    content: "ollenka7777@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+.row-block__foot_5 {
+    position: relative;
+}
+
+.row-block__foot_5::after {
+    content: "uve33@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+.row-block__foot_6 {
+    position: relative;
+}
+
+.row-block__foot_6::after {
+    content: "olenkamischak.16061970@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+.block__athlete {}
+
+.block__athlete:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+
+.row-block__fathlete_1 {
+    position: relative;
+}
+
+.row-block__fathlete_1::after {
+    content: "stepanenkodima80@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__fathlete_2 {
+    position: relative;
+}
+
+.row-block__fathlete_2::after {
+    content: "priem_infiz@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__fathlete_3 {
+    position: relative;
+}
+
+.row-block__fathlete_3::after {
+    content: "vika.rogkova@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__fathlete_4 {
+    position: relative;
+}
+
+.row-block__fathlete_4::after {
+    content: "o.obodenko81@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__fathlete_5 {
+    position: relative;
+}
+
+.row-block__fathlete_5::after {
+    content: "annapechko1986@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__fathlete_6 {
+    position: relative;
+}
+
+.row-block__fathlete_6::after {
+    content: "novivadimir269@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.blk {
+    background-color: rgb(144, 144, 131);
+    border-radius: 25px;
+}
+
+.blk:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.blk__title {
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+
+.blk__title:not(:last-child) {
+    padding-bottom: 30px;
+}
+
+.block__football {}
+
+.block__football:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.row-block__football_1,
+.row-block__football_2,
+.row-block__football_3,
+.row-block__football_4,
+.row-block__football_5,
+.row-block__football_6,
+.row-block__football_7,
+.row-block__football_8,
+.row-block__football_9,
+.row-block__football_10,
+.row-block__football_11,
+.row-block__football_12,
+.row-block__football_13 {
+    max-width: 194px;
+}
+
+.row-block__football_1 {
+    /* align-self: center; */
+}
+
+/* .row-block__football_1::before {
+    content: "";
+        position: absolute;
+        top: 1px;
+        left: -310px;
+} */
+
+.row-block__subtitle_10 {
+    position: relative;
+}
+
+.row-block__subtitle_10::before {
+    content: "10";
+    position: absolute;
+    top: 1px;
+    left: -310px;
+}
+
+.row-block__subtitle_11 {
+    position: relative;
+}
+
+.row-block__subtitle_11::before {
+    content: "11";
+    position: absolute;
+    top: 1px;
+    left: -310px;
+}
+
+.row-block__subtitle_12 {
+    position: relative;
+}
+
+.row-block__subtitle_12::before {
+    content: "12";
+    position: absolute;
+    top: 1px;
+    left: -310px;
+}
+
+.row-block__subtitle_13 {
+    position: relative;
+}
+
+.row-block__subtitle_13::before {
+    content: "13";
+    position: absolute;
+    top: 1px;
+    left: -310px;
+}
+
+.row-block__football_1 {
+    position: relative;
+}
+
+.row-block__football_1::before {
+    content: "elenamitova@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__football_2 {
+    position: relative;
+}
+
+.row-block__football_2::before {
+    content: "1soloveyaleksandr@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__football_3 {
+    position: relative;
+}
+
+.row-block__football_3::before {
+    content: "sergey_dnepr2008@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__football_4 {
+    position: relative;
+}
+
+.row-block__football_4::before {
+    content: "polakovaantonina303@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__football_5 {
+    position: relative;
+}
+
+.row-block__football_5::before {
+    content: "polakovaantonina303@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__football_6 {
+    position: relative;
+}
+
+.row-block__football_6::before {
+    content: "yakovenkoartem2012@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__football_7 {
+    position: relative;
+}
+
+.row-block__football_7::before {
+    content: "dakftol@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__football_8 {
+    position: relative;
+}
+
+.row-block__football_8::before {
+    content: "1soloveydmitriy@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__football_9 {
+    position: relative;
+}
+
+.row-block__football_9::before {
+    content: "v.tisha.65@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__football_10 {
+    position: relative;
+}
+
+.row-block__football_10::before {
+    content: "anely26@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__football_111 {
+    position: relative;
+}
+
+.row-block__football_11::before {
+    content: "rakovskiymama@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__football_12 {
+    position: relative;
+}
+
+.row-block__football_12::before {
+    content: "kireevaleksandr1958@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__football_13 {
+    position: relative;
+}
+
+.row-block__football_13::before {
+    content: "terentevsergej220@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+
+
+.row-block__gim_1 {
+    position: relative;
+}
+
+.row-block__gim_1::before {
+    content: "borisova01@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+.row-block__gim_2 {
+    position: relative;
+}
+
+.row-block__gim_2::before {
+    content: "";
+    border: 1px solid #FFFFFF;
+    width: 100%;
+    position: absolute;
+    top: 11px;
+    right: -310px;
+}
+
+.row-block__gim_3 {
+    position: relative;
+}
+
+.row-block__gim_3::before {
+    content: "ladc@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__gim_4 {
+    position: relative;
+}
+
+.row-block__gim_4::before {
+    content: "fav65@i.ua";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__gim_5 {
+    position: relative;
+}
+
+.row-block__gim_5::before {
+    content: "soroka_volodja@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+.row-block__gim_6 {
+    position: relative;
+}
+
+.row-block__gim_6::before {
+    content: "soroka_volodja@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+.row-block__gim_7 {
+    position: relative;
+}
+
+.row-block__gim_7::before {
+    content: "irinadnepr2016@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+
+.row-block__gim_8 {
+    position: relative;
+}
+
+.row-block__gim_8::before {
+    content: "pavelshkarupilo@rambler.ru";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__gim_9 {
+    position: relative;
+}
+
+.row-block__gim_9::before {
+    content: "lilylily1989@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.block__pp {}
+
+.block__pp:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.row-block__qq_1 {
+    position: relative;
+
+}
+
+.row-block__qq_1::before {
+    content: "siv260180@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.bbb {
+    background-color: rgb(127, 193, 204);
+    border-radius: 25px;
+}
+
+.row-block__qq_2 {
+    position: relative;
+}
+
+.row-block__qq_2::before {
+    content: "moskalenkonatali2016@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+.row-block__qq_3 {
+    position: relative;
+}
+
+.row-block__qq_3::before {
+    content: "orra2020@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+.row-block__qq_4 {
+    position: relative;
+}
+
+.row-block__qq_4::before {
+    content: "sydorchuk1704@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+.row-block__qq_5 {
+    position: relative;
+}
+
+
+.row-block__qq_5::before {
+    content: "dancesport@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__qq_6 {
+    position: relative;
+}
+
+.row-block__qq_6::before {
+    content: "yelisieieva.daria@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__qq_7 {
+    position: relative;
+}
+
+.row-block__qq_7::before {
+    content: "koshelevaea@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+.row-block__qq_8 {
+    position: relative;
+}
+
+.row-block__qq_8::before {
+    content: "anastasievazv@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+.row-block__qq_9 {
+    position: relative;
+}
+
+.row-block__qq_9::before {
+    content: "valerireshetylova@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+.row-block__qq_10 {
+    position: relative;
+}
+
+
+.row-block__qq_10::before {
+    content: "pikineraleksandr@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__qq_11 {
+    position: relative;
+}
+
+.row-block__qq_11::before {
+    content: "reshetilova.j@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+.block__lang {}
+
+.block__lang:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.row-block__lang_1 {
+    position: relative;
+}
+
+.row-block__lang_1::before {
+    content: "nl-kovalenko2007@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__lang_2 {
+    position: relative;
+}
+
+.row-block__lang_2::before {
+    content: "danczepko@meta.ua";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__lang_3 {
+    position: relative;
+}
+
+.row-block__lang_3::before {
+    content: "irinakanafotcka@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__lang_4 {
+    position: relative;
+}
+
+.row-block__lang_4::before {
+    content: "svetla.poleshuk@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__lang_5 {
+    position: relative;
+}
+
+.row-block__lang_5::before {
+    content: "lanabochrova264@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.bbb {
+    margin-bottom: 50px;
+}
+
+
+.row-block__pop_1 {
+    position: relative;
+}
+
+.row-block__pop_1::before {
+    content: "andrushinalubovua@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+.row-block__pop_2 {
+    position: relative;
+}
+
+.row-block__pop_2::before {
+    content: "lina728@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__pop_3 {
+    position: relative;
+}
+
+.row-block__pop_3::before {
+    content: "vagif@rahmanov.dp.ua";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__pop_4 {
+    position: relative;
+}
+
+.row-block__pop_4::before {
+    content: "kakovkinaolya@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__pop_5 {
+    position: relative;
+}
+
+.row-block__pop_5::before {
+    content: "psiholog.rodina@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__pop_6 {
+    position: relative;
+}
+
+.row-block__pop_6::before {
+    content: "shubav14@meta.ua";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__pop_7 {
+    position: relative;
+}
+
+.row-block__pop_7::before {
+    content: "gusarenko2008@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__pop_8 {
+    position: relative;
+}
+
+.row-block__pop_8::before {
+    content: "yulya.valax@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.vvv {
+    background-color: rgb(152, 204, 152);
+    border-radius: 25px;
+}
+
+.row-block__ww_1 {
+    position: relative;
+}
+
+.row-block__ww_1::before {
+    content: "rokutov@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__ww_2 {
+    position: relative;
+}
+
+.row-block__ww_2::before {
+    content: "tv18061949@i.ua";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__ww_3 {
+    position: relative;
+}
+
+.row-block__ww_3::before {
+    content: "sunny.sana1704@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__ww_4 {
+    position: relative;
+}
+
+.row-block__ww_4::before {
+    content: "tolstikova108@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__ww_5 {
+    position: relative;
+}
+
+.row-block__ww_5::before {
+    content: "pvs55@i.ua";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__ww_6 {
+    position: relative;
+}
+
+.row-block__ww_6::before {
+    content: "ladc@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__ww_7 {
+    position: relative;
+}
+
+.row-block__ww_7::before {
+    content: "mukvichv@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+.row-block__aa_1 {
+    position: relative;
+}
+
+.row-block__aa_1::before {
+    content: "l.olgaL@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__aa_2 {
+    position: relative;
+}
+
+.row-block__aa_2::before {
+    content: "valentina0433@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__aa_3 {
+    position: relative;
+}
+
+.row-block__aa_3::before {
+    content: "lupetrechuk@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__aa_4 {
+    position: relative;
+}
+
+.row-block__aa_4::before {
+    content: "kirillburdaev.ua@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__aa_5 {
+    position: relative;
+}
+
+.row-block__aa_5::before {
+    content: "mizinvaleriea@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__aa_6 {
+    position: relative;
+}
+
+.row-block__aa_6::before {
+    content: "gnn33@ukr.net";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__aa_7 {
+    position: relative;
+}
+
+.row-block__aa_7::before {
+    content: "liska@ua.fm";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.block__ce {}
+
+.block__ce:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+
+.row-block__foof_1 {
+    position: relative;
+}
+
+.row-block__foof_1::before {
+    content: "VladlenSamoskin12@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__foof_2 {
+    position: relative;
+}
+
+.row-block__foof_2::before {
+    content: "meleshkov1956@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+.row-block__foof_3 {
+    position: relative;
+}
+
+.row-block__foof_3::before {
+    content: "saschakoslovska@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__foof_4 {
+    position: relative;
+}
+
+.row-block__foof_4::before {
+    content: "dregigor24@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+
+.row-block__foof_5 {
+    position: relative;
+}
+
+.row-block__foof_5::before {
+    content: "gvozdak@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
+
+.row-block__foof_6 {
+    position: relative;
+}
+
+.row-block__foof_6::before {
+    content: "kasja.leka@gmail.com";
+    position: absolute;
+    top: 1px;
+    right: -310px;
+}
